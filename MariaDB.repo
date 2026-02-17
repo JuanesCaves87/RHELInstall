@@ -1,0 +1,5 @@
+[MariaDB-bb-11.8-release]
+name=MariaDB bb-11.8-release repo (build 61201)
+baseurl=https://ci.mariadb.org/61201/amd64-rhel-8-rpm-autobake/rpms
+gpgcheck=0
+module_hotfixes = 1

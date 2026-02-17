@@ -1,0 +1,44 @@
+Solution Steps
+
+    Enable the EPEL repository
+    The Remi repository often depends on the Extra Packages for Enterprise Linux (EPEL) repository.
+    bash
+
+    $ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+
+    Usa el código con precaución.
+
+Enable the CodeReady-Builder repository (for RHEL only)
+If you are using Red Hat Enterprise Linux, enable the CodeReady-Builder (or PowerTools for CentOS/Rocky) repository, which provides additional dependencies.
+bash
+
+# For RHEL 8:
+$ sudo subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+# For CentOS/Rocky 8 (PowerTools):
+# sudo dnf config-manager --set-enabled powertools
+
+Usa el código con precaución.
+Install and enable the Remi repository
+Install the Remi repository configuration package and the dnf-utils package, then enable the specific PHP 8.3 module stream.
+bash
+
+$ sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+$ sudo dnf install dnf-utils -y
+$ sudo dnf module reset php -y
+$ sudo dnf module enable php:remi-8.3 -y
+
+Usa el código con precaución.
+Install the MISP repository
+Install the repository that provides the misp package itself.
+bash
+
+$ sudo dnf install https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm -y
+
+Usa el código con precaución.
+Install the MISP package with all dependencies
+Once all the necessary repositories and PHP 8.3 stream are enabled, the installation should resolve the dependencies automatically.
+bash
+
+$ sudo dnf install misp -y
+
+Usa el código con precaución.

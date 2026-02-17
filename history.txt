@@ -1,0 +1,1358 @@
+[m@localhost Descargas]$ chmod +x Install_MISP_RH8.sh 
+[m@localhost Descargas]$ ./Install_MISP_RH8.sh 
+tee: /var/log/misp_install_rhel8.log: Permiso denegado
+[ERROR] Ejecuta como root: sudo bash ./Install_MISP_RH8.sh
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[sudo] password for m: 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:46:30, el lun 12 ene 2026 17:58:39 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:46:35, el lun 12 ene 2026 17:58:39 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+Dependencias resueltas.
+================================================================================
+ Paquete      Arq.      Versión          Repositorio                       Tam.
+================================================================================
+Instalando:
+ yum-utils    noarch    4.0.21-25.el8    rhel-8-for-x86_64-baseos-rpms     76 k
+
+Resumen de la transacción
+================================================================================
+Instalar  1 Paquete
+
+Tamaño total de la descarga: 76 k
+Tamaño instalado: 23 k
+Descargando paquetes:
+yum-utils-4.0.21-25.el8.noarch.rpm              172 kB/s |  76 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           172 kB/s |  76 kB     00:00     
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                     1/1 
+  Instalando          : yum-utils-4.0.21-25.el8.noarch                      1/1 
+  Ejecutando scriptlet: yum-utils-4.0.21-25.el8.noarch                      1/1 
+  Verificando         : yum-utils-4.0.21-25.el8.noarch                      1/1 
+Productos instalados actualizados.
+
+Instalado:
+  yum-utils-4.0.21-25.el8.noarch                                                
+
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-1.1-1.el8.noarch.rpm]: https://github.com/MISP/MISP-RPM/releases/download/2.5.31-el9/misp-2.5.31-1.el9.x86_64.rpm
+[INFO]  Descargando e instalando: https://github.com/MISP/MISP-RPM/releases/download/2.5.31-el9/misp-2.5.31-1.el9.x86_64.rpm
+Actualización de repositorios de Subscription Management.
+Red Hat CodeReady Linux Builder for RHEL 8 x86_ 7.6 MB/s |  12 MB     00:01    
+Última comprobación de caducidad de metadatos hecha hace 0:00:01, el lun 12 ene 2026 18:49:54 EST.
+misp-2.5.31-1.el9.x86_64.rpm                     32 MB/s |  62 MB     00:01    
+Error: 
+ Problema: conflicting requests
+  - nothing provides misp-php-pear-command-line needed by misp-2.5.31-1.el9.x86_64 from @commandline
+  - nothing provides misp-php-pear-crypt-gpg needed by misp-2.5.31-1.el9.x86_64 from @commandline
+  - nothing provides misp-php-pecl-brotli needed by misp-2.5.31-1.el9.x86_64 from @commandline
+  - nothing provides misp-php-pecl-rdkafka needed by misp-2.5.31-1.el9.x86_64 from @commandline
+  - nothing provides misp-php-pecl-ssdeep needed by misp-2.5.31-1.el9.x86_64 from @commandline
+(pruebe a añadir '--skip-broken' para descartar los paquetes que no se pueden instalar o '--nobest' para no tener en cuenta sólo los mejores candidatos)
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[sudo] password for m: 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:00:59, el lun 12 ene 2026 18:49:54 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:04, el lun 12 ene 2026 18:49:54 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-1.1-1.el8.noarch.rpm]: 
+[INFO]  Descargando e instalando: https://repo.misp-project.ch/yum/misp8/misp-release-1.1-1.el8.noarch.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:21, el lun 12 ene 2026 18:49:54 EST.
+misp-release-1.1-1.el8.noarch.rpm                11 kB/s |  13 kB     00:01    
+Dependencias resueltas.
+================================================================================
+ Paquete             Arquitectura  Versión            Repositorio          Tam.
+================================================================================
+Instalando:
+ misp-release        noarch        1.1-1.el8          @commandline         13 k
+
+Resumen de la transacción
+================================================================================
+Instalar  1 Paquete
+
+Tamaño total: 13 k
+Tamaño instalado: 7.9 k
+Descargando paquetes:
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                     1/1 
+  Instalando          : misp-release-1.1-1.el8.noarch                       1/1 
+  Verificando         : misp-release-1.1-1.el8.noarch                       1/1 
+Productos instalados actualizados.
+
+Instalado:
+  misp-release-1.1-1.el8.noarch                                                 
+
+¡Listo!
+[OK]    misp-release instalado (repo configurado).
+¿Instalar paquetes MISP ahora? (y/n) [y]: y
+[INFO]  Instalando paquetes MISP y servicios requeridos...
+Actualización de repositorios de Subscription Management.
+mariadb                                         5.1  B/s |  10  B     00:01    
+Errors during downloading metadata for repository 'mariadb':
+  - Status code: 404 for https://mirror.mariadb.org/yum/11/centos8-amd64/repodata/repomd.xml (IP: 162.55.42.214)
+Error: Failed to download metadata for repo 'mariadb': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+mariadb                                         5.2  B/s |  10  B     00:01    
+Errors during downloading metadata for repository 'mariadb':
+  - Status code: 404 for https://mirror.mariadb.org/yum/11/centos8-amd64/repodata/repomd.xml (IP: 162.55.42.214)
+Error: Failed to download metadata for repo 'mariadb': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+[m@localhost Descargas]$  cat /etc/yum.repos.d/MariaDB.repo 
+cat: /etc/yum.repos.d/MariaDB.repo: No existe el fichero o el directorio
+[m@localhost Descargas]$ sudo dnf install reposync createrepo
+Actualización de repositorios de Subscription Management.
+mariadb                                         5.2  B/s |  10  B     00:01    
+Errors during downloading metadata for repository 'mariadb':
+  - Status code: 404 for https://mirror.mariadb.org/yum/11/centos8-amd64/repodata/repomd.xml (IP: 162.55.42.214)
+Error: Failed to download metadata for repo 'mariadb': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+[m@localhost Descargas]$ sudo nano /etc/yum.repos.d/misp.repo
+[sudo] password for m: 
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[sudo] password for m: 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+MariaDB bb-11.8-release repo (build 61201)      139 kB/s | 234 kB     00:01    
+misp                                             17 MB/s | 118 MB     00:07    
+Última comprobación de caducidad de metadatos hecha hace 0:00:01, el lun 12 ene 2026 19:07:50 EST.
+Dependencias resueltas.
+================================================================================
+ Paquete               Arquitectura    Versión              Repositorio    Tam.
+================================================================================
+Actualizando:
+ misp-release          noarch          1.1-3.el8            misp           13 k
+
+Resumen de la transacción
+================================================================================
+Actualizar  1 Paquete
+
+Tamaño total de la descarga: 13 k
+Descargando paquetes:
+misp-release-1.1-3.el8.noarch.rpm                16 kB/s |  13 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            16 kB/s |  13 kB     00:00     
+misp                                            5.8 MB/s | 5.9 kB     00:00    
+Importando llave GPG 0xA45E3EC6:
+ ID usuario: "SWITCH KOJI <koji@switch.ch>"
+ Huella    : C094 799C 4341 8FCF 7B94 DEE3 DC77 F987 A45E 3EC6
+ Desde     : /etc/pki/rpm-gpg/RPM-GPG-KEY-KOJI-SWITCH
+La llave ha sido importada exitosamente
+misp                                            1.6 MB/s | 1.6 kB     00:00    
+Importando llave GPG 0xA49C83F6:
+ ID usuario: "MISP-Project Koji <koji@misp-project.ch>"
+ Huella    : 3143 3489 5B2B 61F2 7246 11DC 1874 F2F9 A49C 83F6
+ Desde     : /etc/pki/rpm-gpg/RPM-GPG-KEY-KOJI-MISPPROJECT
+La llave ha sido importada exitosamente
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                     1/1 
+  Actualizando        : misp-release-1.1-3.el8.noarch                       1/2 
+advertencia:/etc/yum.repos.d/misp.repo saved as /etc/yum.repos.d/misp.repo.rpmsave
+
+  Limpieza            : misp-release-1.1-1.el8.noarch                       2/2 
+  Verificando         : misp-release-1.1-3.el8.noarch                       1/2 
+  Verificando         : misp-release-1.1-1.el8.noarch                       2/2 
+Productos instalados actualizados.
+
+Actualizado:
+  misp-release-1.1-3.el8.noarch                                                 
+
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+mariadb                                         299 kB/s | 779 kB     00:02    
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-1.1-1.el8.noarch.rpm]: https://github.com/MISP/MISP-RPM/releases/download/2.5.31-el8/misp-2.5.31-1.el8.x86_64.rpm
+[INFO]  Descargando e instalando: https://github.com/MISP/MISP-RPM/releases/download/2.5.31-el8/misp-2.5.31-1.el8.x86_64.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:04, el lun 12 ene 2026 19:08:15 EST.
+misp-2.5.31-1.el8.x86_64.rpm                     30 MB/s |  73 MB     00:02    
+Error: 
+ Problema: conflicting requests
+  - nothing provides misp-php-pear-command-line needed by misp-2.5.31-1.el8.x86_64 from @commandline
+  - nothing provides misp-php-pear-crypt-gpg needed by misp-2.5.31-1.el8.x86_64 from @commandline
+  - nothing provides misp-php-pecl-brotli needed by misp-2.5.31-1.el8.x86_64 from @commandline
+  - nothing provides misp-php-pecl-rdkafka needed by misp-2.5.31-1.el8.x86_64 from @commandline
+  - nothing provides misp-php-pecl-ssdeep needed by misp-2.5.31-1.el8.x86_64 from @commandline
+(pruebe a añadir '--skip-broken' para descartar los paquetes que no se pueden instalar o '--nobest' para no tener en cuenta sólo los mejores candidatos)
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:47, el lun 12 ene 2026 19:08:15 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:53, el lun 12 ene 2026 19:08:15 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-1.1-1.el8.noarch.rpm]: 
+[INFO]  Descargando e instalando: https://repo.misp-project.ch/yum/misp8/misp-release-1.1-1.el8.noarch.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:02:21, el lun 12 ene 2026 19:08:15 EST.
+misp-release-1.1-1.el8.noarch.rpm                17 kB/s |  13 kB     00:00    
+Dependencias resueltas.
+================================================================================
+ Paquete             Arquitectura  Versión            Repositorio          Tam.
+================================================================================
+Revirtiendo:
+ misp-release        noarch        1.1-1.el8          @commandline         13 k
+
+Resumen de la transacción
+================================================================================
+Revertir  1 Paquete
+
+Tamaño total: 13 k
+Descargando paquetes:
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                     1/1 
+  Revirtiendo         : misp-release-1.1-1.el8.noarch                       1/2 
+  Limpieza            : misp-release-1.1-3.el8.noarch                       2/2 
+  Verificando         : misp-release-1.1-1.el8.noarch                       1/2 
+  Verificando         : misp-release-1.1-3.el8.noarch                       2/2 
+Productos instalados actualizados.
+
+Revertido:
+  misp-release-1.1-1.el8.noarch                                                 
+
+¡Listo!
+[OK]    misp-release instalado (repo configurado).
+¿Instalar paquetes MISP ahora? (y/n) [y]: y 
+[INFO]  Instalando paquetes MISP y servicios requeridos...
+Actualización de repositorios de Subscription Management.
+mariadb                                         5.2  B/s |  10  B     00:01    
+Errors during downloading metadata for repository 'mariadb':
+  - Status code: 404 for https://mirror.mariadb.org/yum/11/centos8-amd64/repodata/repomd.xml (IP: 162.55.42.214)
+Error: Failed to download metadata for repo 'mariadb': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+[m@localhost Descargas]$  cat /etc/yum.repos.d/MariaDB.repo 
+cat: /etc/yum.repos.d/MariaDB.repo: No existe el fichero o el directorio
+[m@localhost Descargas]$ sudo nano /etc/yum.repos.d/misp.repo
+[sudo] password for m: 
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[sudo] password for m: 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+MariaDB bb-11.8-release repo (build 61201)      5.9 kB/s | 3.0 kB     00:00    
+misp                                            1.4 kB/s | 1.5 kB     00:01    
+Dependencias resueltas.
+================================================================================
+ Paquete               Arquitectura    Versión              Repositorio    Tam.
+================================================================================
+Actualizando:
+ misp-release          noarch          1.1-3.el8            misp           13 k
+
+Resumen de la transacción
+================================================================================
+Actualizar  1 Paquete
+
+Tamaño total de la descarga: 13 k
+Descargando paquetes:
+misp-release-1.1-3.el8.noarch.rpm                17 kB/s |  13 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            17 kB/s |  13 kB     00:00     
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                     1/1 
+  Actualizando        : misp-release-1.1-3.el8.noarch                       1/2 
+advertencia:/etc/yum.repos.d/misp.repo saved as /etc/yum.repos.d/misp.repo.rpmsave
+
+  Limpieza            : misp-release-1.1-1.el8.noarch                       2/2 
+  Verificando         : misp-release-1.1-3.el8.noarch                       1/2 
+  Verificando         : misp-release-1.1-1.el8.noarch                       2/2 
+Productos instalados actualizados.
+
+Actualizado:
+  misp-release-1.1-3.el8.noarch                                                 
+
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:00:08, el lun 12 ene 2026 20:03:36 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm]: 
+[INFO]  Descargando e instalando: https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:00:30, el lun 12 ene 2026 20:03:36 EST.
+misp-release-latest.el8.noarch.rpm               17 kB/s |  13 kB     00:00    
+El paquete misp-release-1.1-3.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    misp-release instalado (repo configurado).
+¿Instalar paquetes MISP ahora? (y/n) [y]: y
+[INFO]  Instalando paquetes MISP y servicios requeridos...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:00:42, el lun 12 ene 2026 20:03:36 EST.
+El paquete cronie-1.5.2-10.el8.x86_64 ya está instalado.
+Error: 
+ Problema: cannot install the best candidate for the job
+  - nothing provides supervisor needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-bcmath needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-brotli needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-cli needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-gd needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-intl needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-json needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-mbstring needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-mysqlnd needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-opcache needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pdo needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-apcu needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-gnupg needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-rdkafka needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-simdjson needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-ssdeep needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-zip needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-process needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-xml needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-redis6 needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides (php83-php or php83-php-fpm) needed by misp-2.5.31-1.el8.x86_64 from misp
+(pruebe a añadir '--skip-broken' para descartar los paquetes que no se pueden instalar o '--nobest' para no tener en cuenta sólo los mejores candidatos)
+[m@localhost Descargas]$ sudo yum clean all && sudo yum makecache
+Actualización de repositorios de Subscription Management.
+41 archivos eliminados
+Actualización de repositorios de Subscription Management.
+mariadb                                                           312 kB/s | 779 kB     00:02    
+misp                                                               16 MB/s | 118 MB     00:07    
+Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)           37 MB/s |  78 MB     00:02    
+Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)           18 MB/s |  12 MB     00:00    
+Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)              43 MB/s | 117 MB     00:02    
+Caché de metadatos creada.
+[m@localhost Descargas]$ sudo yum update
+[sudo] password for m: 
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:05:19, el lun 12 ene 2026 20:07:34 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[sudo] password for m: 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:11:04, el lun 12 ene 2026 20:07:34 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:11:09, el lun 12 ene 2026 20:07:34 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm]: 
+[INFO]  Descargando e instalando: https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:11:31, el lun 12 ene 2026 20:07:34 EST.
+misp-release-latest.el8.noarch.rpm               18 kB/s |  13 kB     00:00    
+El paquete misp-release-1.1-3.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    misp-release instalado (repo configurado).
+¿Instalar paquetes MISP ahora? (y/n) [y]: y 
+[INFO]  Instalando paquetes MISP y servicios requeridos...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:11:49, el lun 12 ene 2026 20:07:34 EST.
+El paquete cronie-1.5.2-10.el8.x86_64 ya está instalado.
+Error: 
+ Problema: cannot install the best candidate for the job
+  - nothing provides supervisor needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-bcmath needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-brotli needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-cli needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-gd needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-intl needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-json needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-mbstring needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-mysqlnd needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-opcache needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pdo needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-apcu needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-gnupg needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-rdkafka needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-simdjson needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-ssdeep needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-zip needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-process needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-xml needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-redis6 needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides (php83-php or php83-php-fpm) needed by misp-2.5.31-1.el8.x86_64 from misp
+(pruebe a añadir '--skip-broken' para descartar los paquetes que no se pueden instalar o '--nobest' para no tener en cuenta sólo los mejores candidatos)
+[m@localhost Descargas]$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+[sudo] password for m: 
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:46:15, el lun 12 ene 2026 21:05:00 EST.
+epel-release-latest-8.noarch.rpm                                            72 kB/s |  25 kB     00:00    
+Dependencias resueltas.
+===========================================================================================================
+ Paquete                    Arquitectura         Versión                  Repositorio                 Tam.
+===========================================================================================================
+Instalando:
+ epel-release               noarch               8-22.el8                 @commandline                25 k
+
+Resumen de la transacción
+===========================================================================================================
+Instalar  1 Paquete
+
+Tamaño total: 25 k
+Tamaño instalado: 34 k
+Descargando paquetes:
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                                                1/1 
+  Instalando          : epel-release-8-22.el8.noarch                                                   1/1 
+  Ejecutando scriptlet: epel-release-8-22.el8.noarch                                                   1/1 
+Many EPEL packages require the CodeReady Builder (CRB) repository.
+It is recommended that you run /usr/bin/crb enable to enable the CRB repository.
+
+  Verificando         : epel-release-8-22.el8.noarch                                                   1/1 
+Productos instalados actualizados.
+
+Instalado:
+  epel-release-8-22.el8.noarch                                                                             
+
+¡Listo!
+[m@localhost Descargas]$ sudo subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:04:21, el lun 12 ene 2026 21:52:23 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:04:27, el lun 12 ene 2026 21:52:23 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm]: 
+[INFO]  Descargando e instalando: https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:04:46, el lun 12 ene 2026 21:52:23 EST.
+misp-release-latest.el8.noarch.rpm               17 kB/s |  13 kB     00:00    
+El paquete misp-release-1.1-3.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    misp-release instalado (repo configurado).
+¿Instalar paquetes MISP ahora? (y/n) [y]: y
+[INFO]  Instalando paquetes MISP y servicios requeridos...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:04:57, el lun 12 ene 2026 21:52:23 EST.
+El paquete cronie-1.5.2-10.el8.x86_64 ya está instalado.
+Error: 
+ Problema: cannot install the best candidate for the job
+  - nothing provides (php83-php or php83-php-fpm) needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-bcmath needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-brotli needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-cli needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-gd needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-intl needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-json needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-mbstring needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-mysqlnd needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-opcache needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pdo needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-apcu needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-gnupg needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-rdkafka needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-simdjson needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-ssdeep needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-zip needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-process needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-xml needed by misp-2.5.31-1.el8.x86_64 from misp
+  - nothing provides php83-php-pecl-redis6 needed by misp-2.5.31-1.el8.x86_64 from misp
+(pruebe a añadir '--skip-broken' para descartar los paquetes que no se pueden instalar o '--nobest' para no tener en cuenta sólo los mejores candidatos)
+[m@localhost Descargas]$ sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:05:39, el lun 12 ene 2026 21:52:23 EST.
+remi-release-8.rpm                                                          65 kB/s |  37 kB     00:00    
+Dependencias resueltas.
+===========================================================================================================
+ Paquete                  Arquitectura       Versión                        Repositorio               Tam.
+===========================================================================================================
+Instalando:
+ remi-release             noarch             8.10-2.el8.remi                @commandline              37 k
+
+Resumen de la transacción
+===========================================================================================================
+Instalar  1 Paquete
+
+Tamaño total: 37 k
+Tamaño instalado: 34 k
+Descargando paquetes:
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                                                1/1 
+  Instalando          : remi-release-8.10-2.el8.remi.noarch                                            1/1 
+  Verificando         : remi-release-8.10-2.el8.remi.noarch                                            1/1 
+Productos instalados actualizados.
+
+Instalado:
+  remi-release-8.10-2.el8.remi.noarch                                                                      
+
+¡Listo!
+[m@localhost Descargas]$ dnf install dnf-utils -y
+No root, los repositorios de Subscription Management no están actualizados
+Error: Este comando debe ejecutarse con privilegios de superusuario (bajo el usuario root en la mayoría de los sistemas).
+[m@localhost Descargas]$ sudo dnf install dnf-utils -y
+Actualización de repositorios de Subscription Management.
+Remi's Modular repository for Enterprise Linux 8 - x86_64                  628 kB/s | 1.1 MB     00:01    
+Safe Remi's RPM repository for Enterprise Linux 8 - x86_64                 1.1 MB/s | 2.4 MB     00:02    
+Última comprobación de caducidad de metadatos hecha hace 0:00:01, el lun 12 ene 2026 21:58:34 EST.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[m@localhost Descargas]$ dnf module reset php -y
+No root, los repositorios de Subscription Management no están actualizados
+Error: Este comando debe ejecutarse con privilegios de superusuario (bajo el usuario root en la mayoría de los sistemas).
+[m@localhost Descargas]$ sudo dnf module reset php -y
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:00:24, el lun 12 ene 2026 21:58:34 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[m@localhost Descargas]$ sudo dnf module enable php:remi-8.3 -y
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:00:46, el lun 12 ene 2026 21:58:34 EST.
+Dependencias resueltas.
+===========================================================================================================
+ Paquete                  Arquitectura            Versión                   Repositorio               Tam.
+===========================================================================================================
+Activando flujos de módulos:
+ php                                              remi-8.3                                                
+
+Resumen de la transacción
+===========================================================================================================
+
+¡Listo!
+[m@localhost Descargas]$ sudo dnf install https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm -y
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:17, el lun 12 ene 2026 21:58:34 EST.
+misp-release-latest.el8.noarch.rpm                                          17 kB/s |  13 kB     00:00    
+El paquete misp-release-1.1-3.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[m@localhost Descargas]$ sudo dnf install misp -y
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:01:38, el lun 12 ene 2026 21:58:34 EST.
+Dependencias resueltas.
+===========================================================================================================
+ Paquete                 Arq.   Versión                             Repositorio                       Tam.
+===========================================================================================================
+Instalando:
+ misp                    x86_64 2.5.31-1.el8                        misp                              75 M
+Instalando dependencias:
+ apr                     x86_64 1.6.3-12.el8                        rhel-8-for-x86_64-appstream-rpms 130 k
+ apr-util                x86_64 1.6.1-9.el8                         rhel-8-for-x86_64-appstream-rpms 106 k
+ capstone                x86_64 4.0.2-5.el8                         epel                             1.1 M
+ environment-modules     x86_64 4.5.2-4.el8                         rhel-8-for-x86_64-baseos-rpms    422 k
+ faup                    x86_64 1.6-1.el8                           misp                             156 k
+ freeglut                x86_64 3.0.0-9.el8                         rhel-8-for-x86_64-appstream-rpms 191 k
+ gd3php                  x86_64 2.3.3-8.el8.remi                    remi-safe                        148 k
+ gtcaca                  x86_64 0+gitb05ed3c-2.el8                  misp                              18 k
+ httpd                   x86_64 2.4.37-65.module+el8.10.0+23815+1b5e1c66.7
+                                                                    rhel-8-for-x86_64-appstream-rpms 1.4 M
+ httpd-filesystem        noarch 2.4.37-65.module+el8.10.0+23815+1b5e1c66.7
+                                                                    rhel-8-for-x86_64-appstream-rpms  46 k
+ httpd-tools             x86_64 2.4.37-65.module+el8.10.0+23815+1b5e1c66.7
+                                                                    rhel-8-for-x86_64-appstream-rpms 113 k
+ libaom                  x86_64 3.6.1-1.el8                         epel                             1.9 M
+ libavif                 x86_64 0.10.1-3.el8                        epel                              76 k
+ libcaca                 x86_64 0.99-0.59.beta20.el8                epel                             225 k
+ libdav1d                x86_64 0.5.2-2.el8                         epel                             346 k
+ libicu74                x86_64 74.2-1.el8.remi                     remi-safe                         10 M
+ libimagequant           x86_64 2.12.5-1.el8                        epel                              63 k
+ liblzf                  x86_64 3.6-16.el8                          epel                              28 k
+ libraqm                 x86_64 0.7.0-4.el8                         epel                              19 k
+ mesa-libGLU             x86_64 9.0.0-15.el8                        rhel-8-for-x86_64-appstream-rpms 185 k
+ misp-python-virtualenv  x86_64 2.5.31-1.el8                        misp                              48 M
+ mod_http2               x86_64 1.15.7-10.module+el8.10.0+23369+11a81384.4
+                                                                    rhel-8-for-x86_64-appstream-rpms 155 k
+ mod_ssl                 x86_64 1:2.4.37-65.module+el8.10.0+23815+1b5e1c66.7
+                                                                    rhel-8-for-x86_64-appstream-rpms 143 k
+ mpdecimal               x86_64 2.5.1-3.el8                         rhel-8-for-x86_64-appstream-rpms  93 k
+ oniguruma5php           x86_64 6.9.10-1.el8.remi                   remi-safe                        215 k
+ php83-php-bcmath        x86_64 8.3.29-1.el8.remi                   remi-safe                        104 k
+ php83-php-brotli        x86_64 0.18.3-1.el8.remi                   remi-safe                         32 k
+ php83-php-cli           x86_64 8.3.29-1.el8.remi                   remi-safe                        3.8 M
+ php83-php-common        x86_64 8.3.29-1.el8.remi                   remi-safe                        773 k
+ php83-php-fpm           x86_64 8.3.29-1.el8.remi                   remi-safe                        2.0 M
+ php83-php-gd            x86_64 8.3.29-1.el8.remi                   remi-safe                        110 k
+ php83-php-intl          x86_64 8.3.29-1.el8.remi                   remi-safe                        232 k
+ php83-php-mbstring      x86_64 8.3.29-1.el8.remi                   remi-safe                        550 k
+ php83-php-mysqlnd       x86_64 8.3.29-1.el8.remi                   remi-safe                        211 k
+ php83-php-opcache       x86_64 8.3.29-1.el8.remi                   remi-safe                        417 k
+ php83-php-pdo           x86_64 8.3.29-1.el8.remi                   remi-safe                        157 k
+ php83-php-pecl-apcu     x86_64 5.1.28-1.el8.remi                   remi-safe                         78 k
+ php83-php-pecl-gnupg    x86_64 1.5.4-1.el8.remi                    remi-safe                         37 k
+ php83-php-pecl-igbinary x86_64 3.2.16-1.el8.remi                   remi-safe                         62 k
+ php83-php-pecl-msgpack  x86_64 3.0.0-1.el8.remi                    remi-safe                         52 k
+ php83-php-pecl-rdkafka6 x86_64 6.0.5-1.el8.remi                    remi-safe                         62 k
+ php83-php-pecl-redis6   x86_64 6.3.0-1.el8.remi                    remi-safe                        282 k
+ php83-php-pecl-simdjson x86_64 4.0.0-2.el8.remi                    remi-safe                        103 k
+ php83-php-pecl-ssdeep   x86_64 1.1.0-13.el8.remi                   remi-safe                         19 k
+ php83-php-pecl-zip      x86_64 1.22.7-1.el8.remi                   remi-safe                         67 k
+ php83-php-process       x86_64 8.3.29-1.el8.remi                   remi-safe                        110 k
+ php83-php-xml           x86_64 8.3.29-1.el8.remi                   remi-safe                        217 k
+ php83-runtime           x86_64 8.3-1.el8.remi                      remi-safe                        1.1 M
+ python3.12-libs         x86_64 3.12.12-1.el8_10                    rhel-8-for-x86_64-appstream-rpms  10 M
+ python3.12-pip-wheel    noarch 23.2.1-4.el8                        rhel-8-for-x86_64-appstream-rpms 1.5 M
+ redhat-logos-httpd      noarch 810.1-1.el8_10                      rhel-8-for-x86_64-baseos-rpms     30 k
+ redis                   x86_64 5.0.3-5.module+el8.4.0+12927+b9845322
+                                                                    rhel-8-for-x86_64-appstream-rpms 927 k
+ remi-librdkafka         x86_64 2.13.0-1.el8.remi                   remi-safe                        920 k
+ remi-libzip             x86_64 1.11.4-1.el8.remi                   remi-safe                         76 k
+ scl-utils               x86_64 1:2.0.2-16.el8                      rhel-8-for-x86_64-appstream-rpms  47 k
+ ssdeep-libs             x86_64 2.14.1-7.el8                        epel                              25 k
+ supervisor              noarch 4.2.2-1.el8                         epel                             576 k
+ svt-av1-libs            x86_64 0.8.7-1.el8                         epel                             4.7 M
+ tcl                     x86_64 1:8.6.8-2.el8                       rhel-8-for-x86_64-baseos-rpms    1.1 M
+Instalando dependencias débiles:
+ apr-util-bdb            x86_64 1.6.1-9.el8                         rhel-8-for-x86_64-appstream-rpms  25 k
+ apr-util-openssl        x86_64 1.6.1-9.el8                         rhel-8-for-x86_64-appstream-rpms  27 k
+ python3.12              x86_64 3.12.12-1.el8_10                    rhel-8-for-x86_64-appstream-rpms  30 k
+Activando flujos de módulos:
+ httpd                          2.4                                                                       
+ redis                          5                                                                         
+
+Resumen de la transacción
+===========================================================================================================
+Instalar  63 Paquetes
+
+Tamaño total de la descarga: 171 M
+Tamaño instalado: 810 M
+Descargando paquetes:
+(1/63): libavif-0.10.1-3.el8.x86_64.rpm                                    254 kB/s |  76 kB     00:00    
+(2/63): libcaca-0.99-0.59.beta20.el8.x86_64.rpm                            1.1 MB/s | 225 kB     00:00    
+(3/63): capstone-4.0.2-5.el8.x86_64.rpm                                    1.7 MB/s | 1.1 MB     00:00    
+(4/63): libdav1d-0.5.2-2.el8.x86_64.rpm                                    1.8 MB/s | 346 kB     00:00    
+(5/63): libaom-3.6.1-1.el8.x86_64.rpm                                      2.6 MB/s | 1.9 MB     00:00    
+(6/63): libimagequant-2.12.5-1.el8.x86_64.rpm                              865 kB/s |  63 kB     00:00    
+(7/63): liblzf-3.6-16.el8.x86_64.rpm                                       378 kB/s |  28 kB     00:00    
+(8/63): libraqm-0.7.0-4.el8.x86_64.rpm                                     283 kB/s |  19 kB     00:00    
+(9/63): ssdeep-libs-2.14.1-7.el8.x86_64.rpm                                311 kB/s |  25 kB     00:00    
+(10/63): supervisor-4.2.2-1.el8.noarch.rpm                                 4.2 MB/s | 576 kB     00:00    
+(11/63): svt-av1-libs-0.8.7-1.el8.x86_64.rpm                                18 MB/s | 4.7 MB     00:00    
+(12/63): gtcaca-0+gitb05ed3c-2.el8.x86_64.rpm                               22 kB/s |  18 kB     00:00    
+(13/63): faup-1.6-1.el8.x86_64.rpm                                         137 kB/s | 156 kB     00:01    
+(14/63): mesa-libGLU-9.0.0-15.el8.x86_64.rpm                                91 kB/s | 185 kB     00:02    
+(15/63): redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64.rpm            4.4 MB/s | 927 kB     00:00    
+(16/63): apr-1.6.3-12.el8.x86_64.rpm                                       314 kB/s | 130 kB     00:00    
+(17/63): mpdecimal-2.5.1-3.el8.x86_64.rpm                                  226 kB/s |  93 kB     00:00    
+(18/63): scl-utils-2.0.2-16.el8.x86_64.rpm                                 212 kB/s |  47 kB     00:00    
+(19/63): apr-util-bdb-1.6.1-9.el8.x86_64.rpm                               265 kB/s |  25 kB     00:00    
+(20/63): apr-util-openssl-1.6.1-9.el8.x86_64.rpm                           246 kB/s |  27 kB     00:00    
+(21/63): misp-python-virtualenv-2.5.31-1.el8.x86_64.rpm                     12 MB/s |  48 MB     00:04    
+(22/63): python3.12-pip-wheel-23.2.1-4.el8.noarch.rpm                      5.3 MB/s | 1.5 MB     00:00    
+(23/63): freeglut-3.0.0-9.el8.x86_64.rpm                                   1.7 MB/s | 191 kB     00:00    
+(24/63): apr-util-1.6.1-9.el8.x86_64.rpm                                   131 kB/s | 106 kB     00:00    
+(25/63): httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64.rpm        13 MB/s | 1.4 MB     00:00    
+(26/63): mod_http2-1.15.7-10.module+el8.10.0+23369+11a81384.4.x86_64.rpm   782 kB/s | 155 kB     00:00    
+(27/63): httpd-filesystem-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.noarc 478 kB/s |  46 kB     00:00    
+(28/63): mod_ssl-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64.rpm     1.4 MB/s | 143 kB     00:00    
+(29/63): httpd-tools-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64.rpm 827 kB/s | 113 kB     00:00    
+(30/63): python3.12-3.12.12-1.el8_10.x86_64.rpm                            286 kB/s |  30 kB     00:00    
+(31/63): tcl-8.6.8-2.el8.x86_64.rpm                                        7.7 MB/s | 1.1 MB     00:00    
+(32/63): python3.12-libs-3.12.12-1.el8_10.x86_64.rpm                        37 MB/s |  10 MB     00:00    
+(33/63): redhat-logos-httpd-810.1-1.el8_10.noarch.rpm                      303 kB/s |  30 kB     00:00    
+(34/63): environment-modules-4.5.2-4.el8.x86_64.rpm                        2.3 MB/s | 422 kB     00:00    
+(35/63): misp-2.5.31-1.el8.x86_64.rpm                                       12 MB/s |  75 MB     00:06    
+(36/63): gd3php-2.3.3-8.el8.remi.x86_64.rpm                                203 kB/s | 148 kB     00:00    
+(37/63): php83-php-bcmath-8.3.29-1.el8.remi.x86_64.rpm                     705 kB/s | 104 kB     00:00    
+(38/63): php83-php-brotli-0.18.3-1.el8.remi.x86_64.rpm                     209 kB/s |  32 kB     00:00    
+(39/63): oniguruma5php-6.9.10-1.el8.remi.x86_64.rpm                        256 kB/s | 215 kB     00:00    
+(40/63): php83-php-common-8.3.29-1.el8.remi.x86_64.rpm                     1.3 MB/s | 773 kB     00:00    
+(41/63): php83-php-cli-8.3.29-1.el8.remi.x86_64.rpm                        3.8 MB/s | 3.8 MB     00:01    
+(42/63): php83-php-gd-8.3.29-1.el8.remi.x86_64.rpm                         752 kB/s | 110 kB     00:00    
+(43/63): php83-php-fpm-8.3.29-1.el8.remi.x86_64.rpm                        4.6 MB/s | 2.0 MB     00:00    
+(44/63): libicu74-74.2-1.el8.remi.x86_64.rpm                               4.6 MB/s |  10 MB     00:02    
+(45/63): php83-php-intl-8.3.29-1.el8.remi.x86_64.rpm                       1.5 MB/s | 232 kB     00:00    
+(46/63): php83-php-mbstring-8.3.29-1.el8.remi.x86_64.rpm                   3.5 MB/s | 550 kB     00:00    
+(47/63): php83-php-mysqlnd-8.3.29-1.el8.remi.x86_64.rpm                    1.4 MB/s | 211 kB     00:00    
+(48/63): php83-php-opcache-8.3.29-1.el8.remi.x86_64.rpm                    2.7 MB/s | 417 kB     00:00    
+(49/63): php83-php-pdo-8.3.29-1.el8.remi.x86_64.rpm                        1.0 MB/s | 157 kB     00:00    
+(50/63): php83-php-pecl-apcu-5.1.28-1.el8.remi.x86_64.rpm                  541 kB/s |  78 kB     00:00    
+(51/63): php83-php-pecl-gnupg-1.5.4-1.el8.remi.x86_64.rpm                  248 kB/s |  37 kB     00:00    
+(52/63): php83-php-pecl-igbinary-3.2.16-1.el8.remi.x86_64.rpm              397 kB/s |  62 kB     00:00    
+(53/63): php83-php-pecl-msgpack-3.0.0-1.el8.remi.x86_64.rpm                349 kB/s |  52 kB     00:00    
+(54/63): php83-php-pecl-rdkafka6-6.0.5-1.el8.remi.x86_64.rpm               420 kB/s |  62 kB     00:00    
+(55/63): php83-php-pecl-redis6-6.3.0-1.el8.remi.x86_64.rpm                 1.9 MB/s | 282 kB     00:00    
+(56/63): php83-php-pecl-simdjson-4.0.0-2.el8.remi.x86_64.rpm               670 kB/s | 103 kB     00:00    
+(57/63): php83-php-pecl-ssdeep-1.1.0-13.el8.remi.x86_64.rpm                126 kB/s |  19 kB     00:00    
+(58/63): php83-php-pecl-zip-1.22.7-1.el8.remi.x86_64.rpm                   461 kB/s |  67 kB     00:00    
+(59/63): php83-php-process-8.3.29-1.el8.remi.x86_64.rpm                    755 kB/s | 110 kB     00:00    
+(60/63): php83-runtime-8.3-1.el8.remi.x86_64.rpm                           7.3 MB/s | 1.1 MB     00:00    
+(61/63): remi-librdkafka-2.13.0-1.el8.remi.x86_64.rpm                      5.7 MB/s | 920 kB     00:00    
+(62/63): remi-libzip-1.11.4-1.el8.remi.x86_64.rpm                          517 kB/s |  76 kB     00:00    
+(63/63): php83-php-xml-8.3.29-1.el8.remi.x86_64.rpm                        507 kB/s | 217 kB     00:00    
+-----------------------------------------------------------------------------------------------------------
+Total                                                                       16 MB/s | 171 MB     00:10     
+Extra Packages for Enterprise Linux 8 - x86_64                             1.6 MB/s | 1.6 kB     00:00    
+Importando llave GPG 0x2F86D6A1:
+ ID usuario: "Fedora EPEL (8) <epel@fedoraproject.org>"
+ Huella    : 94E2 79EB 8D8F 25B2 1810 ADF1 21EA 45AB 2F86 D6A1
+ Desde     : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8
+La llave ha sido importada exitosamente
+Safe Remi's RPM repository for Enterprise Linux 8 - x86_64                 3.0 MB/s | 3.1 kB     00:00    
+Importando llave GPG 0x5F11735A:
+ ID usuario: "Remi's RPM repository <remi@remirepo.net>"
+ Huella    : 6B38 FEA7 231F 87F5 2B9C A9D8 5550 9759 5F11 735A
+ Desde     : /etc/pki/rpm-gpg/RPM-GPG-KEY-remi.el8
+La llave ha sido importada exitosamente
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                                                1/1 
+  Ejecutando scriptlet: httpd-filesystem-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.noarch            1/63 
+  Instalando          : httpd-filesystem-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.noarch            1/63 
+  Instalando          : apr-1.6.3-12.el8.x86_64                                                       2/63 
+  Ejecutando scriptlet: apr-1.6.3-12.el8.x86_64                                                       2/63 
+  Instalando          : apr-util-bdb-1.6.1-9.el8.x86_64                                               3/63 
+  Instalando          : apr-util-openssl-1.6.1-9.el8.x86_64                                           4/63 
+  Instalando          : apr-util-1.6.1-9.el8.x86_64                                                   5/63 
+  Ejecutando scriptlet: apr-util-1.6.1-9.el8.x86_64                                                   5/63 
+  Instalando          : ssdeep-libs-2.14.1-7.el8.x86_64                                               6/63 
+  Instalando          : httpd-tools-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                 7/63 
+  Instalando          : remi-libzip-1.11.4-1.el8.remi.x86_64                                          8/63 
+  Instalando          : remi-librdkafka-2.13.0-1.el8.remi.x86_64                                      9/63 
+  Instalando          : oniguruma5php-6.9.10-1.el8.remi.x86_64                                       10/63 
+  Instalando          : libicu74-74.2-1.el8.remi.x86_64                                              11/63 
+  Instalando          : redhat-logos-httpd-810.1-1.el8_10.noarch                                     12/63 
+  Instalando          : mod_http2-1.15.7-10.module+el8.10.0+23369+11a81384.4.x86_64                  13/63 
+  Instalando          : httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                      14/63 
+  Ejecutando scriptlet: httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                      14/63 
+  Instalando          : mod_ssl-1:2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                  15/63 
+  Instalando          : tcl-1:8.6.8-2.el8.x86_64                                                     16/63 
+  Ejecutando scriptlet: tcl-1:8.6.8-2.el8.x86_64                                                     16/63 
+  Instalando          : environment-modules-4.5.2-4.el8.x86_64                                       17/63 
+  Ejecutando scriptlet: environment-modules-4.5.2-4.el8.x86_64                                       17/63 
+  Instalando          : scl-utils-1:2.0.2-16.el8.x86_64                                              18/63 
+  Instalando          : php83-runtime-8.3-1.el8.remi.x86_64                                          19/63 
+  Ejecutando scriptlet: php83-runtime-8.3-1.el8.remi.x86_64                                          19/63 
+  Instalando          : php83-php-common-8.3.29-1.el8.remi.x86_64                                    20/63 
+  Instalando          : php83-php-pdo-8.3.29-1.el8.remi.x86_64                                       21/63 
+  Instalando          : php83-php-mysqlnd-8.3.29-1.el8.remi.x86_64                                   22/63 
+  Instalando          : php83-php-bcmath-8.3.29-1.el8.remi.x86_64                                    23/63 
+  Instalando          : php83-php-brotli-0.18.3-1.el8.remi.x86_64                                    24/63 
+  Instalando          : php83-php-cli-8.3.29-1.el8.remi.x86_64                                       25/63 
+  Instalando          : php83-php-fpm-8.3.29-1.el8.remi.x86_64                                       26/63 
+  Ejecutando scriptlet: php83-php-fpm-8.3.29-1.el8.remi.x86_64                                       26/63 
+  Instalando          : php83-php-intl-8.3.29-1.el8.remi.x86_64                                      27/63 
+  Instalando          : php83-php-mbstring-8.3.29-1.el8.remi.x86_64                                  28/63 
+  Instalando          : php83-php-pecl-apcu-5.1.28-1.el8.remi.x86_64                                 29/63 
+  Instalando          : php83-php-pecl-gnupg-1.5.4-1.el8.remi.x86_64                                 30/63 
+  Instalando          : php83-php-pecl-igbinary-3.2.16-1.el8.remi.x86_64                             31/63 
+  Instalando          : php83-php-pecl-msgpack-3.0.0-1.el8.remi.x86_64                               32/63 
+  Instalando          : php83-php-pecl-rdkafka6-6.0.5-1.el8.remi.x86_64                              33/63 
+  Instalando          : php83-php-pecl-simdjson-4.0.0-2.el8.remi.x86_64                              34/63 
+  Instalando          : php83-php-pecl-ssdeep-1.1.0-13.el8.remi.x86_64                               35/63 
+  Instalando          : php83-php-pecl-zip-1.22.7-1.el8.remi.x86_64                                  36/63 
+  Instalando          : php83-php-process-8.3.29-1.el8.remi.x86_64                                   37/63 
+  Instalando          : php83-php-xml-8.3.29-1.el8.remi.x86_64                                       38/63 
+  Instalando          : freeglut-3.0.0-9.el8.x86_64                                                  39/63 
+  Ejecutando scriptlet: freeglut-3.0.0-9.el8.x86_64                                                  39/63 
+  Instalando          : python3.12-pip-wheel-23.2.1-4.el8.noarch                                     40/63 
+  Instalando          : mpdecimal-2.5.1-3.el8.x86_64                                                 41/63 
+  Instalando          : python3.12-3.12.12-1.el8_10.x86_64                                           42/63 
+  Ejecutando scriptlet: python3.12-3.12.12-1.el8_10.x86_64                                           42/63 
+  Instalando          : python3.12-libs-3.12.12-1.el8_10.x86_64                                      43/63 
+  Instalando          : misp-python-virtualenv-2.5.31-1.el8.x86_64                                   44/63 
+  Ejecutando scriptlet: redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64                           45/63 
+  Instalando          : redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64                           45/63 
+  Ejecutando scriptlet: redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64                           45/63 
+  Instalando          : mesa-libGLU-9.0.0-15.el8.x86_64                                              46/63 
+  Instalando          : libcaca-0.99-0.59.beta20.el8.x86_64                                          47/63 
+  Instalando          : gtcaca-0+gitb05ed3c-2.el8.x86_64                                             48/63 
+  Instalando          : faup-1.6-1.el8.x86_64                                                        49/63 
+  Instalando          : svt-av1-libs-0.8.7-1.el8.x86_64                                              50/63 
+  Instalando          : supervisor-4.2.2-1.el8.noarch                                                51/63 
+  Ejecutando scriptlet: supervisor-4.2.2-1.el8.noarch                                                51/63 
+  Instalando          : libraqm-0.7.0-4.el8.x86_64                                                   52/63 
+  Instalando          : liblzf-3.6-16.el8.x86_64                                                     53/63 
+  Instalando          : php83-php-pecl-redis6-6.3.0-1.el8.remi.x86_64                                54/63 
+  Instalando          : libimagequant-2.12.5-1.el8.x86_64                                            55/63 
+  Instalando          : libdav1d-0.5.2-2.el8.x86_64                                                  56/63 
+  Instalando          : libaom-3.6.1-1.el8.x86_64                                                    57/63 
+  Instalando          : libavif-0.10.1-3.el8.x86_64                                                  58/63 
+  Instalando          : gd3php-2.3.3-8.el8.remi.x86_64                                               59/63 
+  Instalando          : php83-php-gd-8.3.29-1.el8.remi.x86_64                                        60/63 
+  Instalando          : capstone-4.0.2-5.el8.x86_64                                                  61/63 
+  Instalando          : php83-php-opcache-8.3.29-1.el8.remi.x86_64                                   62/63 
+  Instalando          : misp-2.5.31-1.el8.x86_64                                                     63/63 
+  Ejecutando scriptlet: misp-2.5.31-1.el8.x86_64                                                     63/63 
+chcon: no se puede acceder a '/var/www/MISP/app/webroot/img/orgs': No existe el fichero o el directorio
+Relabeled /var/www/MISP/app/tmp from system_u:object_r:httpd_sys_rw_content_t:s0 to system_u:object_r:httpd_sys_content_t:s0
+Relabeled /var/www/MISP/app/tmp/logs from system_u:object_r:httpd_sys_rw_content_t:s0 to system_u:object_r:httpd_log_t:s0
+Relabeled /var/www/MISP/app/tmp/cache from system_u:object_r:httpd_sys_rw_content_t:s0 to system_u:object_r:httpd_sys_content_t:s0
+Relabeled /var/www/MISP/app/Config/config.php from system_u:object_r:httpd_sys_content_t:s0 to system_u:object_r:httpd_sys_rw_content_t:s0
+Relabeled /var/www/MISP/app/Lib/cakephp/lib/Cake/Config/config.php from system_u:object_r:httpd_sys_content_t:s0 to system_u:object_r:httpd_sys_rw_content_t:s0
+Warning: SELinux userspace will refer to the module from /usr/share/MISP/policy/selinux/misp-workers8.pp as misp-workers rather than misp-workers8
+
+  Ejecutando scriptlet: httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                      63/63 
+  Ejecutando scriptlet: misp-2.5.31-1.el8.x86_64                                                     63/63 
+  Ejecutando scriptlet: php83-php-fpm-8.3.29-1.el8.remi.x86_64                                       63/63 
+  Verificando         : capstone-4.0.2-5.el8.x86_64                                                   1/63 
+  Verificando         : libaom-3.6.1-1.el8.x86_64                                                     2/63 
+  Verificando         : libavif-0.10.1-3.el8.x86_64                                                   3/63 
+  Verificando         : libcaca-0.99-0.59.beta20.el8.x86_64                                           4/63 
+  Verificando         : libdav1d-0.5.2-2.el8.x86_64                                                   5/63 
+  Verificando         : libimagequant-2.12.5-1.el8.x86_64                                             6/63 
+  Verificando         : liblzf-3.6-16.el8.x86_64                                                      7/63 
+  Verificando         : libraqm-0.7.0-4.el8.x86_64                                                    8/63 
+  Verificando         : ssdeep-libs-2.14.1-7.el8.x86_64                                               9/63 
+  Verificando         : supervisor-4.2.2-1.el8.noarch                                                10/63 
+  Verificando         : svt-av1-libs-0.8.7-1.el8.x86_64                                              11/63 
+  Verificando         : faup-1.6-1.el8.x86_64                                                        12/63 
+  Verificando         : gtcaca-0+gitb05ed3c-2.el8.x86_64                                             13/63 
+  Verificando         : misp-2.5.31-1.el8.x86_64                                                     14/63 
+  Verificando         : misp-python-virtualenv-2.5.31-1.el8.x86_64                                   15/63 
+  Verificando         : mesa-libGLU-9.0.0-15.el8.x86_64                                              16/63 
+  Verificando         : redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64                           17/63 
+  Verificando         : apr-1.6.3-12.el8.x86_64                                                      18/63 
+  Verificando         : mpdecimal-2.5.1-3.el8.x86_64                                                 19/63 
+  Verificando         : scl-utils-1:2.0.2-16.el8.x86_64                                              20/63 
+  Verificando         : apr-util-bdb-1.6.1-9.el8.x86_64                                              21/63 
+  Verificando         : apr-util-openssl-1.6.1-9.el8.x86_64                                          22/63 
+  Verificando         : apr-util-1.6.1-9.el8.x86_64                                                  23/63 
+  Verificando         : python3.12-pip-wheel-23.2.1-4.el8.noarch                                     24/63 
+  Verificando         : freeglut-3.0.0-9.el8.x86_64                                                  25/63 
+  Verificando         : mod_http2-1.15.7-10.module+el8.10.0+23369+11a81384.4.x86_64                  26/63 
+  Verificando         : httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                      27/63 
+  Verificando         : httpd-filesystem-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.noarch           28/63 
+  Verificando         : httpd-tools-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                29/63 
+  Verificando         : mod_ssl-1:2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                  30/63 
+  Verificando         : python3.12-3.12.12-1.el8_10.x86_64                                           31/63 
+  Verificando         : python3.12-libs-3.12.12-1.el8_10.x86_64                                      32/63 
+  Verificando         : tcl-1:8.6.8-2.el8.x86_64                                                     33/63 
+  Verificando         : environment-modules-4.5.2-4.el8.x86_64                                       34/63 
+  Verificando         : redhat-logos-httpd-810.1-1.el8_10.noarch                                     35/63 
+  Verificando         : gd3php-2.3.3-8.el8.remi.x86_64                                               36/63 
+  Verificando         : libicu74-74.2-1.el8.remi.x86_64                                              37/63 
+  Verificando         : oniguruma5php-6.9.10-1.el8.remi.x86_64                                       38/63 
+  Verificando         : php83-php-bcmath-8.3.29-1.el8.remi.x86_64                                    39/63 
+  Verificando         : php83-php-brotli-0.18.3-1.el8.remi.x86_64                                    40/63 
+  Verificando         : php83-php-cli-8.3.29-1.el8.remi.x86_64                                       41/63 
+  Verificando         : php83-php-common-8.3.29-1.el8.remi.x86_64                                    42/63 
+  Verificando         : php83-php-fpm-8.3.29-1.el8.remi.x86_64                                       43/63 
+  Verificando         : php83-php-gd-8.3.29-1.el8.remi.x86_64                                        44/63 
+  Verificando         : php83-php-intl-8.3.29-1.el8.remi.x86_64                                      45/63 
+  Verificando         : php83-php-mbstring-8.3.29-1.el8.remi.x86_64                                  46/63 
+  Verificando         : php83-php-mysqlnd-8.3.29-1.el8.remi.x86_64                                   47/63 
+  Verificando         : php83-php-opcache-8.3.29-1.el8.remi.x86_64                                   48/63 
+  Verificando         : php83-php-pdo-8.3.29-1.el8.remi.x86_64                                       49/63 
+  Verificando         : php83-php-pecl-apcu-5.1.28-1.el8.remi.x86_64                                 50/63 
+  Verificando         : php83-php-pecl-gnupg-1.5.4-1.el8.remi.x86_64                                 51/63 
+  Verificando         : php83-php-pecl-igbinary-3.2.16-1.el8.remi.x86_64                             52/63 
+  Verificando         : php83-php-pecl-msgpack-3.0.0-1.el8.remi.x86_64                               53/63 
+  Verificando         : php83-php-pecl-rdkafka6-6.0.5-1.el8.remi.x86_64                              54/63 
+  Verificando         : php83-php-pecl-redis6-6.3.0-1.el8.remi.x86_64                                55/63 
+  Verificando         : php83-php-pecl-simdjson-4.0.0-2.el8.remi.x86_64                              56/63 
+  Verificando         : php83-php-pecl-ssdeep-1.1.0-13.el8.remi.x86_64                               57/63 
+  Verificando         : php83-php-pecl-zip-1.22.7-1.el8.remi.x86_64                                  58/63 
+  Verificando         : php83-php-process-8.3.29-1.el8.remi.x86_64                                   59/63 
+  Verificando         : php83-php-xml-8.3.29-1.el8.remi.x86_64                                       60/63 
+  Verificando         : php83-runtime-8.3-1.el8.remi.x86_64                                          61/63 
+  Verificando         : remi-librdkafka-2.13.0-1.el8.remi.x86_64                                     62/63 
+  Verificando         : remi-libzip-1.11.4-1.el8.remi.x86_64                                         63/63 
+Productos instalados actualizados.
+
+Instalado:
+  apr-1.6.3-12.el8.x86_64                                                                                  
+  apr-util-1.6.1-9.el8.x86_64                                                                              
+  apr-util-bdb-1.6.1-9.el8.x86_64                                                                          
+  apr-util-openssl-1.6.1-9.el8.x86_64                                                                      
+  capstone-4.0.2-5.el8.x86_64                                                                              
+  environment-modules-4.5.2-4.el8.x86_64                                                                   
+  faup-1.6-1.el8.x86_64                                                                                    
+  freeglut-3.0.0-9.el8.x86_64                                                                              
+  gd3php-2.3.3-8.el8.remi.x86_64                                                                           
+  gtcaca-0+gitb05ed3c-2.el8.x86_64                                                                         
+  httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                                                  
+  httpd-filesystem-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.noarch                                       
+  httpd-tools-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                                            
+  libaom-3.6.1-1.el8.x86_64                                                                                
+  libavif-0.10.1-3.el8.x86_64                                                                              
+  libcaca-0.99-0.59.beta20.el8.x86_64                                                                      
+  libdav1d-0.5.2-2.el8.x86_64                                                                              
+  libicu74-74.2-1.el8.remi.x86_64                                                                          
+  libimagequant-2.12.5-1.el8.x86_64                                                                        
+  liblzf-3.6-16.el8.x86_64                                                                                 
+  libraqm-0.7.0-4.el8.x86_64                                                                               
+  mesa-libGLU-9.0.0-15.el8.x86_64                                                                          
+  misp-2.5.31-1.el8.x86_64                                                                                 
+  misp-python-virtualenv-2.5.31-1.el8.x86_64                                                               
+  mod_http2-1.15.7-10.module+el8.10.0+23369+11a81384.4.x86_64                                              
+  mod_ssl-1:2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64                                              
+  mpdecimal-2.5.1-3.el8.x86_64                                                                             
+  oniguruma5php-6.9.10-1.el8.remi.x86_64                                                                   
+  php83-php-bcmath-8.3.29-1.el8.remi.x86_64                                                                
+  php83-php-brotli-0.18.3-1.el8.remi.x86_64                                                                
+  php83-php-cli-8.3.29-1.el8.remi.x86_64                                                                   
+  php83-php-common-8.3.29-1.el8.remi.x86_64                                                                
+  php83-php-fpm-8.3.29-1.el8.remi.x86_64                                                                   
+  php83-php-gd-8.3.29-1.el8.remi.x86_64                                                                    
+  php83-php-intl-8.3.29-1.el8.remi.x86_64                                                                  
+  php83-php-mbstring-8.3.29-1.el8.remi.x86_64                                                              
+  php83-php-mysqlnd-8.3.29-1.el8.remi.x86_64                                                               
+  php83-php-opcache-8.3.29-1.el8.remi.x86_64                                                               
+  php83-php-pdo-8.3.29-1.el8.remi.x86_64                                                                   
+  php83-php-pecl-apcu-5.1.28-1.el8.remi.x86_64                                                             
+  php83-php-pecl-gnupg-1.5.4-1.el8.remi.x86_64                                                             
+  php83-php-pecl-igbinary-3.2.16-1.el8.remi.x86_64                                                         
+  php83-php-pecl-msgpack-3.0.0-1.el8.remi.x86_64                                                           
+  php83-php-pecl-rdkafka6-6.0.5-1.el8.remi.x86_64                                                          
+  php83-php-pecl-redis6-6.3.0-1.el8.remi.x86_64                                                            
+  php83-php-pecl-simdjson-4.0.0-2.el8.remi.x86_64                                                          
+  php83-php-pecl-ssdeep-1.1.0-13.el8.remi.x86_64                                                           
+  php83-php-pecl-zip-1.22.7-1.el8.remi.x86_64                                                              
+  php83-php-process-8.3.29-1.el8.remi.x86_64                                                               
+  php83-php-xml-8.3.29-1.el8.remi.x86_64                                                                   
+  php83-runtime-8.3-1.el8.remi.x86_64                                                                      
+  python3.12-3.12.12-1.el8_10.x86_64                                                                       
+  python3.12-libs-3.12.12-1.el8_10.x86_64                                                                  
+  python3.12-pip-wheel-23.2.1-4.el8.noarch                                                                 
+  redhat-logos-httpd-810.1-1.el8_10.noarch                                                                 
+  redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64                                                       
+  remi-librdkafka-2.13.0-1.el8.remi.x86_64                                                                 
+  remi-libzip-1.11.4-1.el8.remi.x86_64                                                                     
+  scl-utils-1:2.0.2-16.el8.x86_64                                                                          
+  ssdeep-libs-2.14.1-7.el8.x86_64                                                                          
+  supervisor-4.2.2-1.el8.noarch                                                                            
+  svt-av1-libs-0.8.7-1.el8.x86_64                                                                          
+  tcl-1:8.6.8-2.el8.x86_64                                                                                 
+
+¡Listo!
+[m@localhost Descargas]$ sudo ./Install_MISP_RH8.sh 
+[sudo] password for m: 
+[INFO]  Sistema: Red Hat Enterprise Linux release 8.10 (Ootpa)
+[INFO]  Log: /var/log/misp_install_rhel8.log
+
+¿Actualizar el sistema (dnf update) ahora? (y/n) [y]: y
+[INFO]  Actualizando sistema (dnf update -y)...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:13:00, el lun 12 ene 2026 21:58:34 EST.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Sistema actualizado.
+[INFO]  Instalando utilidades base...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:13:11, el lun 12 ene 2026 21:58:34 EST.
+El paquete curl-7.61.1-34.el8_10.9.x86_64 ya está instalado.
+El paquete wget-1.19.5-12.el8_10.x86_64 ya está instalado.
+El paquete ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch ya está instalado.
+El paquete gnupg2-2.2.20-3.el8_6.x86_64 ya está instalado.
+El paquete policycoreutils-python-utils-2.9-26.el8_10.noarch ya está instalado.
+El paquete firewalld-0.9.11-10.el8_10.noarch ya está instalado.
+El paquete yum-utils-4.0.21-25.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    Utilidades base instaladas.
+[INFO]  Habilitando CodeReady Builder (requerido para algunas deps).
+[INFO]  Intentando: subscription-manager repos --enable codeready-builder-for-rhel-8-x86_64-rpms
+El repositorio 'codeready-builder-for-rhel-8-x86_64-rpms' está habilitado para este sistema.
+[OK]    CodeReady Builder habilitado: codeready-builder-for-rhel-8-x86_64-rpms
+[INFO]  Instalando el 'misp-release' RPM (configura el repo de MISP-RPM).
+URL del misp-release RPM [https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm]: 
+[INFO]  Descargando e instalando: https://repo.misp-project.ch/yum/misp8/misp-release-latest.el8.noarch.rpm
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:13:37, el lun 12 ene 2026 21:58:34 EST.
+misp-release-latest.el8.noarch.rpm               11 kB/s |  13 kB     00:01    
+El paquete misp-release-1.1-3.el8.noarch ya está instalado.
+Dependencias resueltas.
+Nada por hacer.
+¡Listo!
+[OK]    misp-release instalado (repo configurado).
+¿Instalar paquetes MISP ahora? (y/n) [y]: y
+[INFO]  Instalando paquetes MISP y servicios requeridos...
+Actualización de repositorios de Subscription Management.
+Última comprobación de caducidad de metadatos hecha hace 0:13:57, el lun 12 ene 2026 21:58:34 EST.
+El paquete httpd-2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64 ya está instalado.
+El paquete mod_ssl-1:2.4.37-65.module+el8.10.0+23815+1b5e1c66.7.x86_64 ya está instalado.
+El paquete redis-5.0.3-5.module+el8.4.0+12927+b9845322.x86_64 ya está instalado.
+El paquete cronie-1.5.2-10.el8.x86_64 ya está instalado.
+El paquete misp-2.5.31-1.el8.x86_64 ya está instalado.
+Dependencias resueltas.
+=========================================================================================
+ Paquete                 Arq.    Versión          Repositorio                      Tamaño
+=========================================================================================
+Instalando:
+ MariaDB-server          x86_64  11.4.9-1.el8     mariadb                            27 M
+Instalando dependencias:
+ MariaDB-client          x86_64  11.4.9-1.el8     mariadb                            17 M
+ MariaDB-common          x86_64  11.4.9-1.el8     mariadb                            88 k
+ MariaDB-shared          x86_64  11.4.9-1.el8     mariadb                           128 k
+ galera-4                x86_64  26.4.24-1.el8    mariadb                           1.5 M
+Instalando dependencias débiles:
+ MariaDB-client-compat   noarch  11.4.9-1.el8     mariadb                            11 k
+ MariaDB-server-compat   noarch  11.4.9-1.el8     mariadb                           8.9 k
+ pv                      x86_64  1.6.6-7.el8      epel                               64 k
+ socat                   x86_64  1.7.4.1-2.el8_10 rhel-8-for-x86_64-appstream-rpms  323 k
+
+Resumen de la transacción
+=========================================================================================
+Instalar  9 Paquetes
+
+Tamaño total de la descarga: 46 M
+Tamaño instalado: 237 M
+Descargando paquetes:
+(1/9): pv-1.6.6-7.el8.x86_64.rpm                118 kB/s |  64 kB     00:00    
+(2/9): MariaDB-client-compat-11.4.9-1.el8.noarc 9.4 kB/s |  11 kB     00:01    
+(3/9): MariaDB-common-11.4.9-1.el8.x86_64.rpm   104 kB/s |  88 kB     00:00    
+(4/9): MariaDB-server-compat-11.4.9-1.el8.noarc  19 kB/s | 8.9 kB     00:00    
+(5/9): MariaDB-client-11.4.9-1.el8.x86_64.rpm   8.4 MB/s |  17 MB     00:02    
+(6/9): MariaDB-shared-11.4.9-1.el8.x86_64.rpm   228 kB/s | 128 kB     00:00    
+(7/9): socat-1.7.4.1-2.el8_10.x86_64.rpm        1.4 MB/s | 323 kB     00:00    
+(8/9): galera-4-26.4.24-1.el8.x86_64.rpm        2.1 MB/s | 1.5 MB     00:00    
+(9/9): MariaDB-server-11.4.9-1.el8.x86_64.rpm   2.8 MB/s |  27 MB     00:09    
+--------------------------------------------------------------------------------
+Total                                           4.1 MB/s |  46 MB     00:11     
+mariadb                                         5.8 kB/s | 6.4 kB     00:01    
+Importando llave GPG 0xC74CD1D8:
+ ID usuario: "MariaDB Signing Key <signing-key@mariadb.org>"
+ Huella    : 177F 4010 FE56 CA33 3630 0305 F165 6F24 C74C D1D8
+ Desde     : https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+La llave ha sido importada exitosamente
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                     1/1 
+  Instalando          : MariaDB-shared-11.4.9-1.el8.x86_64                  1/9 
+  Ejecutando scriptlet: MariaDB-shared-11.4.9-1.el8.x86_64                  1/9 
+  Instalando          : MariaDB-common-11.4.9-1.el8.x86_64                  2/9 
+  Instalando          : MariaDB-client-compat-11.4.9-1.el8.noarch           3/9 
+  Instalando          : MariaDB-client-11.4.9-1.el8.x86_64                  4/9 
+  Instalando          : socat-1.7.4.1-2.el8_10.x86_64                       5/9 
+  Instalando          : galera-4-26.4.24-1.el8.x86_64                       6/9 
+  Ejecutando scriptlet: galera-4-26.4.24-1.el8.x86_64                       6/9 
+  Instalando          : pv-1.6.6-7.el8.x86_64                               7/9 
+  Instalando          : MariaDB-server-compat-11.4.9-1.el8.noarch           8/9 
+  Ejecutando scriptlet: MariaDB-server-11.4.9-1.el8.x86_64                  9/9 
+  Instalando          : MariaDB-server-11.4.9-1.el8.x86_64                  9/9 
+  Ejecutando scriptlet: MariaDB-server-11.4.9-1.el8.x86_64                  9/9 
+
+
+Two all-privilege accounts were created.
+One is root@localhost, it has no password, but you need to
+be system 'root' user to connect. Use, for example, sudo mariadb
+The second is mysql@localhost, it has no password either, but
+you need to be the system 'mysql' user to connect.
+After connecting you can set the password, if you would need to be
+able to connect as any of these users with a password and without sudo
+
+See the MariaDB Knowledgebase at https://mariadb.com/kb
+
+Please report any problems at https://mariadb.org/jira
+
+The latest information about MariaDB is available at https://mariadb.org/.
+
+Consider joining MariaDB's strong and vibrant community:
+https://mariadb.org/get-involved/
+
+
+  Verificando         : pv-1.6.6-7.el8.x86_64                               1/9 
+  Verificando         : MariaDB-client-11.4.9-1.el8.x86_64                  2/9 
+  Verificando         : MariaDB-client-compat-11.4.9-1.el8.noarch           3/9 
+  Verificando         : MariaDB-common-11.4.9-1.el8.x86_64                  4/9 
+  Verificando         : MariaDB-server-11.4.9-1.el8.x86_64                  5/9 
+  Verificando         : MariaDB-server-compat-11.4.9-1.el8.noarch           6/9 
+  Verificando         : MariaDB-shared-11.4.9-1.el8.x86_64                  7/9 
+  Verificando         : galera-4-26.4.24-1.el8.x86_64                       8/9 
+  Verificando         : socat-1.7.4.1-2.el8_10.x86_64                       9/9 
+Productos instalados actualizados.
+
+Instalado:
+  MariaDB-client-11.4.9-1.el8.x86_64                                            
+  MariaDB-client-compat-11.4.9-1.el8.noarch                                     
+  MariaDB-common-11.4.9-1.el8.x86_64                                            
+  MariaDB-server-11.4.9-1.el8.x86_64                                            
+  MariaDB-server-compat-11.4.9-1.el8.noarch                                     
+  MariaDB-shared-11.4.9-1.el8.x86_64                                            
+  galera-4-26.4.24-1.el8.x86_64                                                 
+  pv-1.6.6-7.el8.x86_64                                                         
+  socat-1.7.4.1-2.el8_10.x86_64                                                 
+
+¡Listo!
+[OK]    Paquetes instalados.
+[INFO]  Habilitando y arrancando servicios: firewalld, redis, mariadb, httpd...
+Created symlink /etc/systemd/system/multi-user.target.wants/redis.service → /usr/lib/systemd/system/redis.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → /usr/lib/systemd/system/mariadb.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/httpd.service → /usr/lib/systemd/system/httpd.service.
+[OK]    Servicios base listos.
+[INFO]  Configurando firewall (HTTP/HTTPS)...
+success
+success
+success
+[OK]    Firewall: HTTP/HTTPS permitidos.
+[INFO]  SELinux: aplicando booleans recomendados para Apache/MISP (sin deshabilitar SELinux).
+[OK]    SELinux booleans aplicados (si estaban disponibles).
+¿Configurar base de datos local (MariaDB en este host)? (y/n) [y]: y
+[INFO]  Configurando MariaDB local para MISP.
+Nombre de la BD para MISP [misp]: 
+Usuario de BD para MISP [misp]: 
+¿Generar password aleatorio para el usuario BD? (y/n) [y]: n
+Password para misp: 1234
+¿Asignar/establecer password de root de MariaDB ahora? (y/n) [y]: y
+¿Generar password aleatorio para root de MariaDB? (y/n) [y]: n
+Password para root MariaDB: 0000
+[INFO]  Creando BD/usuario y permisos...
+mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead
+mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead
+mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead
+[OK]    MariaDB: BD y usuario listos.
+¿Aplicar configuración MISP (database.php + baseurl + permisos)? (y/n) [y]: y
+[INFO]  Configurando archivos de MISP (database.php y baseurl).
+Base URL (ej: https://misp.tudominio.local) [https://localhost]: misp.hostrhel8.local
+[INFO]  Editando /var/www/MISP/app/Config/database.php ...
+[OK]    database.php actualizado (backup creado).
+[INFO]  Editando /var/www/MISP/app/Config/config.php ...
+[OK]    config.php actualizado (backup creado).
+[INFO]  Ajustando permisos de MISP...
+[OK]    Permisos aplicados (si fue posible).
+[INFO]  Reiniciando httpd...
+[OK]    httpd reiniciado.
+[INFO]  Base URL configurada: misp.hostrhel8.local
+[INFO]  Si el RPM no generó los archivos esperados, revisa manualmente:
+[INFO]    - /var/www/MISP/app/Config/database.php
+[INFO]    - /var/www/MISP/app/Config/config.php
+
+[OK]    Instalación finalizada (con lo que se pudo automatizar).
+
+[INFO]  Siguientes pasos recomendados:
+  1) Abre en navegador: https://localhost/
+  2) Revisa logs:
+     - /var/log/misp_install_rhel8.log
+     - /var/log/httpd/error_log
+     - /var/log/mariadb/mariadb.log (si existe)
+
+[INFO]  Si quieres módulos (misp-modules), normalmente se instalan por separado (no siempre vienen como RPM en este enfoque).
+
+[WARN]  Tip: si tu RHEL8 está muy restringido (sin repos externos), confirma que el release RPM del repo MISP esté accesible. :contentReference[oaicite:2]{index=2}
+[m@localhost Descargas]$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd17:625c:f037:2:a00:27ff:fe4d:fde7  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:fe4d:fde7  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:4d:fd:e7  txqueuelen 1000  (Ethernet)
+        RX packets 953418  bytes 1336358275 (1.2 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 110979  bytes 13771038 (13.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 66  bytes 38168 (37.2 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 66  bytes 38168 (37.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:3d:85:83  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[m@localhost Descargas]$ sudo nano MISP/app/tmp/logs/error.log
+[sudo] password for m: 
+[m@localhost Descargas]$ cd..
+bash: cd..: no se encontró la orden...
+cd
+^X^C
+[m@localhost Descargas]$ cd
+[m@localhost ~]$ ls
+Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público  Vídeos
+[m@localhost ~]$ cd
+[m@localhost ~]$ cd
+[m@localhost ~]$ cd ..
+[m@localhost home]$ ls
+m
+[m@localhost home]$ 
+
